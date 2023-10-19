@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./9c1784cf89fcccf0da6a110d9b42fb63039b7d31cee6.css" rel="stylesheet" type="text/css">
+    <link href="./0a8a5b218ad75b9f7ee7760a36d4ffe6b5d2d5955499.css" rel="stylesheet" type="text/css">
+    <link href="./3d33c314af42ec9143f606142543b6a8104edbbfb88a.css" rel="stylesheet" type="text/css">
+    <link href="./ea75103ae30b63e102cccf5eeed8a72bad8e34ccb276.css" rel="stylesheet" type="text/css">
+    <link href="./0563c5c1453428b36fe914fb953be78fbd76d2472137.css" rel="stylesheet" type="text/css">
+    <link href="./8ec18e8a3cc63260b36b16b8bf7de507682242b5cbb9.css" rel="stylesheet" type="text/css">
+    <link href="./9c1784cf89fcccf0da6a110d9b42fb63039b7d31cee6.css" rel="stylesheet" type="text/css">
+    <link href="./0a8a5b218ad75b9f7ee7760a36d4ffe6b5d2d5955499.css" rel="stylesheet" type="text/css">
+    <link href="./3d33c314af42ec9143f606142543b6a8104edbbfb88a.css" rel="stylesheet" type="text/css">
+    <link href="./ea75103ae30b63e102cccf5eeed8a72bad8e34ccb276.css" rel="stylesheet" type="text/css">
+    <link href="./0563c5c1453428b36fe914fb953be78fbd76d2472137.css" rel="stylesheet" type="text/css">
+    <link href="./8ec18e8a3cc63260b36b16b8bf7de507682242b5cbb9.css" rel="stylesheet" type="text/css">
+    <link href="./52abcf1744478992a7210f03214563fdba26485b7735.css" rel="stylesheet" type="text/css">
+    <link href="./9596621bb3f1936a38d20b12af575baf3d9a31095425.css" rel="stylesheet" type="text/css">
+    <link href="./06a98ab2d4dc94004ad71e0ba7b36a0a8adbd26069f4.css" rel="stylesheet" type="text/css">
+    <link href="./bee43e37494ca5ca95d430e86bde0ebb4756a4500289.css" rel="stylesheet" type="text/css">
+    <link href="./1bcd01aa5f9309cc402f75a9d69fcfa85a4d019cc604.css" rel="stylesheet" type="text/css">
+    <link href="./20079022331cd07289a1bf4138fda8e8e073c40444f8.css" rel="stylesheet" type="text/css">
+    <link href="./eed59ad164d9f173066a7a73a8455be24c03ec37c752.css" rel="stylesheet" type="text/css">
+    <link href="./f04ead4daf166f584c3e9a5bc76321cf644cdeecd600.css" rel="stylesheet" type="text/css">
+    <link href="./be92ace37f12283ca2a89e46a240cae11223a22f24ef.css" rel="stylesheet" type="text/css">
+    <link href="./c6b705d2042913220a508e883dedd1196126debd20d7.css" rel="stylesheet" type="text/css">
+    <link href="./07e2c2cc3289000b57388ac6558be82e306cdc8259bb.css" rel="stylesheet" type="text/css">
+    <link href="./7374974b1755bba465b3b183d3c97a5b17cd6ee87fb8.css" rel="stylesheet" type="text/css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 | Twitch Drops</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://media.moddb.com/images/mods/1/48/47922/b10224ae75edd5debd06c44662cbcb30.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./css2" rel="stylesheet">
+    </head><body><img class="img" src="./825385.png">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .img {
+        position: absolute;
+        /* измените на fixed если хотите чтобы паутина была прилеплена к экрану */
+        z-index: 1;
+        top: -9px;
+        /* отступ сверху*/
+        left: 0px;
+        /* отступ слева, измените left на right если хотите чтобы паутина была справа */
+        width: 400px;
+        /* увеличивайте до 1000px или уменьшайте чтобы изменить размер паутины*/
+      }
+      .alert .wrapper,
+      header>.wrapper {
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+      }
+      body {
+        padding-bottom: 2021px;
+        overflow-x: hidden;
+      }
+      a,
+      body,
+      button {
+        color: #fff;
+      }
+      .alert,
+      button,
+      .block_btn a {
+        background: #e1651a;
+      }
+      button,
+      .block_btn a {
+        border: 0;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .alert .message,
+      button,
+      .block_btn a {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        margin: 0;
+        background: #0e0e13;
+        font-family: "Roboto Flex", sans-serif;
+      }
+      body,
+      html {
+        /*    overflow-x: hidden;*/
+      }
+      .alert {
+        display: none;
+        height: 50px;
+        transition: margin-top 1s cubic-bezier(0.5, 0, 0, 1);
+      }
+      .burger_menu,
+      header {
+        background: rgba(16, 16, 22, 0.9);
+      }
+      .alert .wrapper {
+        align-items: center;
+      }
+      .alert.closed {
+        margin-top: -50px;
+      }
+      .alert .wrapper .close {
+        width: 24px;
+        height: 24px;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6L6 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 6L18 18' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        cursor: pointer;
+        flex-shrink: 0;
+      }
+      .wrapper {
+        margin: 0 auto;
+        max-width: 1160px;
+        /*    padding: 0 16px;*/
+      }
+      a {
+        text-decoration: none;
+      }
+      header {
+        width: 100%;
+        height: 80px;
+        /*    backdrop-filter: blur(50px);*/
+      }
+      ul {
+        list-style: none;
+      }
+      header>.wrapper ul {
+        /*	list-style: none;*/
+        display: flex;
+      }
+      header>.wrapper ul li:not(:last-child) {
+        margin-right: 40px;
+      }
+      header>.wrapper {
+        align-items: center;
+        border-bottom: 1px solid #2a2a38;
+      }
+      header>.burger_menu {
+        padding-top: 20px;
+        padding-left: 10px;
+      }
+      header>.burger_menu ul {
+        margin: 0;
+        padding: 0;
+      }
+      header>.burger_menu ul li:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      .burger span,
+      .burger:after,
+      .burger:before {
+        background-color: #545466;
+        height: 2px;
+        left: 0;
+        transition: 0.4s cubic-bezier(1, 0, 0, 1);
+      }
+      .burger {
+        display: none;
+        position: relative;
+        width: 22px;
+        height: 16px;
+        z-index: 7;
+        /*	cursor: pointer;*/
+      }
+      .burger span,
+      .burger:after,
+      .burger:before,
+      .burger_menu {
+        position: absolute;
+        width: 100%;
+      }
+      .burger span {
+        right: 7px;
+        top: 7px;
+      }
+      .burger:after,
+      .burger:before {
+        content: "";
+      }
+      .burger:before {
+        top: 0;
+      }
+      .burger:after {
+        bottom: 0;
+      }
+      .burger.active span {
+        transform: scale(0);
+      }
+      .burger.active:before {
+        transform: rotate(45deg);
+        top: 6px;
+        background-color: #fff;
+      }
+      .burger.active::after {
+        transform: rotate(-45deg);
+        background-color: #fff;
+        bottom: 8px;
+      }
+      main .block1 {
+        margin: 0 auto;
+        max-width: 1160px;
+        /*	margin-left: 16px;*/
+        position: relative;
+        padding-top: 48px;
+        height: 470px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: -1;
+      }
+      main .block1 .left {
+        width: 100%;
+        max-width: 510px;
+      }
+      main .block1 .right {
+        width: 928px;
+      }
+      main .block1 .right svg {
+        position: absolute;
+        top: -101px;
+        right: -275px;
+      }
+      main .block1 .title {
+        font-weight: 700;
+        font-size: 64px;
+        white-space: nowrap;
+      }
+      main .block1 .title>span {
+        display: inline-block;
+        background: linear-gradient(135.73deg, #e1651a 0.8%, #975832 131.56%);
+        padding: 0 12px;
+        border-radius: 12px;
+        transform: rotate(3.87deg);
+      }
+      main .block1 p {
+        font-weight: 400;
+        font-size: 18px;
+        color: #545466;
+        margin-bottom: 48px;
+      }
+      @media screen and (max-width: 767px) {
+        .block1 .right {
+          position: static;
+          width: auto;
+          overflow: hidden;
+        }
+      }
+      main .block_btn {
+        margin-top: 130px;
+        margin-top: -80px;
+      }
+      .block_cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 130px;
+      }
+      .block_cards>.card {
+        background: #121218;
+        border-radius: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 24px;
+        min-width: fit-content;
+      }
+      .block_cards>.card .title {
+        width: fit-content;
+        font-weight: 500;
+        font-size: 42px;
+        margin-bottom: 12px;
+      }
+      .block_cards>.card .title>span {
+        padding-left: 5px;
+      }
+      .block_cards>.card .desc {
+        /*	font-weight: 500;*/
+        /*	font-size: 18px;*/
+        color: #545466;
+      }
+      .block_cards>.card>.right {
+        padding-left: 20px;
+      }
+      .block_cards>.card:not(:last-child) {
+        margin-right: 25px;
+      }
+      .block_title {
+        font-weight: 700;
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+      .block_desc {
+        max-width: 530px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #545466;
+        margin-bottom: 60px;
+      }
+      .block_desc1 {
+        max-width: 530px;
+        font-weight: 400;
+        font-size: 15px;
+        color: #545466;
+        margin-bottom: 20px;
+      }
+      .block_about {
+        padding-top: 130px;
+      }
+      .block_about .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .block_about .cards .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*	align-items: ce;*/
+        height: 228px;
+        padding: 32px;
+        background-color: #121218;
+        border-radius: 12px;
+      }
+      .block_about .cards .card.card-image {
+        background: #e1651a;
+      }
+      .block_about .cards .card.card-image:after {
+        position: absolute;
+        content: "";
+        /*	width: 177px;*/
+        width: 47.8378378378%;
+        height: 228px;
+        top: 0;
+        right: 0;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALEAAADkCAMAAADgtDWzAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAHjUExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+kuuGkAAACgdFJOUwDAxzDBxcbDwsS/vsjJyssDvAHNEMy9/dDOAs8gBgT8ursx+/rSMv4FLPm4B/i59t/3CQguLQ3RC9PvK9YMCtXU8fTzttvu9dgmtw7XJyri3tm07OTwKCXytSEZEtoX6d3c5+ge4BEpJO3lFhvqFRwjFBPrMxoiGB3h4+YvDx+zgKhgoIZahzRZT3BlqWROfJ+BQVCdQKdEkUOQOIpUq2EKn28nAAAoDUlEQVR42nSazUvq+xbGBWd3JBEInjKw8CWKTmUiJxR2wQ2J5E6ObkocRQlKaZg1sDjsPdhwRhcud3JH/ql3va/1U/tV8w+LZz3rWetbqjWdFqfFQrEAXxq/eboK39nZWQW+8/Pzdrv9+NjuPHY6Nzc3rZtWq9UddAeD8Xg8m81uZ7db+N1/3sP3/v78PBqNXl9f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");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+      .block_about .cards .card:not(:last-child) {
+        margin-right: 25px;
+      }
+      .block_about .cards .card .title {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      .block_about .cards .card .desc {
+        font-weight: 400;
+        font-size: 16px;
+        color: #545466;
+      }
+      .block_about .cards .card.card-image .desc {
+        color: #fff;
+      }
+      .block_main {
+        display: flex;
+        /*	justify-content: center;*/
+        align-items: center;
+        flex-direction: column;
+        padding-top: 130px;
+        transition: opacity 1s linear;
+        /*	max-height: 366px;*/
+      }
+      .block_main .block_desc {
+        text-align: center;
+      }
+      .block_main.hide {
+        opacity: 0;
+      }
+      .block_main .code_input_container {
+        display: flex;
+        flex-direction: column;
+      }
+      .block_main .code_input {
+        display: flex;
+      }
+      .block_main .code_input button {
+        display: flex;
+        justify-content: center;
+        width: 105px;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .block_main .code_input input {
+        width: 250px;
+        background: #121218;
+        border: 0;
+        outline: 0;
+        /*border-radius: 8px;*/
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        padding: 12px 10px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid #121218;
+      }
+      .block_main .code_input input::placeholder {
+        color: #545466;
+      }
+      .block_main .code_input input:focus {
+        overflow: none;
+        /*	box-shadow: inset 0 0 0 2px #e1651a;*/
+        border: 1px solid #545466;
+        border-right: 0;
+      }
+      .block_main .code_input input.error {
+        transition: border .2s linear;
+        border: 2px solid #FF4F4D;
+        border-right: 0;
+      }
+      @keyframes daskldkas {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .block_main .code_input button img {
+        animation: daskldkas 1s infinite linear;
+      }
+      .block_main .error_msg:before {
+        content: '';
+        position: absolute;
+        margin-left: -18px;
+        margin-top: 3px;
+        /*	top: 2px;*/
+        width: 12px;
+        height: 12px;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6' cy='6' r='6' fill='%23FF4F4D'/%3E%3Cpath fill='%23fff' d='M2 5h8v2H2z'/%3E%3C/svg%3E");
+      }
+      .block_main .error_msg {
+        opacity: 0;
+        padding-top: 8px;
+        color: #FF4F4D;
+        padding-left: 18px;
+      }
+      .block_main .error_msg.show {
+        transition: opacity .2s linear;
+        opacity: 1;
+      }
+      /*@media (max-width: 1728px) and (min-width: 983px) {
+	main .block1 .right svg {
+		margin-right: 15em;
+	}
+}
+*/
+      footer {
+        background: rgba(16, 16, 22, 0.9);
+      }
+      footer .wrapper {
+        padding: 24px 0;
+        border-top: 1px solid #2A2A38;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #545466;
+      }
+      @media (max-width: 1190px) {
+        .wrapper,
+        footer .wrapper {
+          padding: 0 16px;
+        }
+        footer .wrapper {
+          padding: 24px 16px;
+        }
+      }
+      @media (max-width: 983px) {
+        main .block1 {
+          height: 320px;
+          margin-left: 16px;
+          overflow: hidden;
+        }
+        main .block1 .left {
+          max-width: 240px;
+        }
+        main .block1 .right {
+          width: 50%;
+        }
+        main .block1 .right svg {
+          width: 500px;
+          right: -210px;
+          top: -180px;
+        }
+        main .block1 .title {
+          font-size: 42px;
+          white-space: revert;
+        }
+        main .block1 .title>span {
+          padding: 0 6px;
+        }
+        main .block1 p {
+          font-size: 12px;
+        }
+        .alert .message {
+          font-size: 16px;
+        }
+        main .block_btn {
+          margin-top: -28px;
+          /*		margin-bottom: 80px;*/
+        }
+        .block_cards {
+          padding-top: 90px;
+          overflow-x: scroll;
+        }
+        .block_cards>.card {
+          padding: 14px 16px;
+        }
+        .block_cards>.card:not(:last-child) {
+          margin-right: 10px;
+        }
+        .block_cards>.card .title {
+          font-size: 28px;
+        }
+        .block_cards>.card .desc {
+          font-size: 14px;
+        }
+        .block_title {
+          font-size: 28px;
+        }
+        .block_desc {
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+        .block_about {
+          padding-top: 80px;
+        }
+        .block_about .cards {
+          flex-direction: column;
+          width: 100%;
+        }
+        .block_about .cards .card {
+          padding: 24px;
+          height: 200px;
+          width: 100%;
+        }
+        .block_about .cards .card .desc {
+          font-size: 12px;
+          max-width: 170px;
+        }
+        .block_about .cards .card.card-image:after {
+          height: 200px;
+          background-position-y: 0;
+        }
+        .block_about .cards .card:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+        .block_cards {
+          /*		margin-bottom: 80px;*/
+        }
+        .block_main {
+          padding-top: 80px;
+        }
+      }
+      @media (max-width: 800px) {
+        header nav {
+          display: none;
+        }
+        .burger {
+          display: block;
+        }
+        main .block_btn button {
+          font-size: 16px;
+          width: 100%;
+          /*		margin: 30px 0;*/
+        }
+      }
+      .burger_menu {
+        /*	position: fixed;*/
+        display: none;
+        transition: right 0.5s cubic-bezier(1, 0, 0, 1.01);
+        /*	top: 80px;*/
+        height: 100%;
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+        right: -100%;
+        z-index: 111;
+        /*	overflow-x: hidden;*/
+      }
+      /* Милый анимированный паучок*/
+      /* Bonus */
+      html:hover .spider {
+        top: -120%;
+      }
+      .spider {
+        position: absolute;
+        /* Заменяем на fixed, если хотите чтобы паучок был прилеплен на экране */
+        display: inline-block;
+        top: 0;
+        /*отступ сверху*/
+        left: 150px;
+        /*отступ слева*/
+        /* 4. Animatie */
+        animation: swing 2s infinite;
+        transform-origin: top;
+        /* Bonus */
+        transition: 1s ease-in-out;
+      }
+      .spider .spiderweb {
+        width: 2px;
+        height: 200px;
+        /* высота паутины, чем меньше число, тем она короче */
+        margin-left: 49px;
+        /* двигаем паутину влево-вправо */
+        background: rgba(255, 255, 255, .7);
+        /* цвет паутины */
+      }
+      .spider .body {
+        width: 100px;
+        /* ширина тела паука */
+        height: 80px;
+        /* высота тела паука */
+        background: #000;
+        /* цвет тела */
+        position: relative;
+        border-radius: 50%;
+      }
+      .spider .body .eye {
+        width: 33px;
+        /* ширина глаз */
+        height: 33px;
+        /* высота глаз */
+        position: absolute;
+        bottom: 20px;
+        background: #fff;
+        /* цвет глаз */
+        border-radius: 50%;
+      }
+      .spider .body .eye.left {
+        left: 15px;
+        /* изменить положение левого глаза */
+      }
+      .spider .body .eye.right {
+        right: 15px;
+        /* изменить положение правого глаза */
+      }
+      .spider .body .eye:after {
+        background: #000;
+        /* цвет зрачков */
+        width: 7px;
+        /* ширина зрачка */
+        height: 7px;
+        /* высота зрачка */
+        content: '';
+        display: block;
+        margin: 55%;
+        border-radius: 50%;
+        /* 3. Animatie */
+        animation: look 8s infinite;
+      }
+      .spider .legs .leg {
+        width: 80px;
+        /* ширина лапок */
+        height: 40px;
+        /* высота лапок */
+        margin-top: -20px;
+        border: 5px solid transparent;
+        border-top-color: #000;
+        /* цвет лапок */
+        border-radius: 40px 40px 0 0;
+      }
+      .spider .legs {
+        position: absolute;
+        bottom: -10%;
+        z-index: -1;
+      }
+      .spider .legs.left {
+        left: -70%;
+        /* изменить положение лапок слева */
+      }
+      .spider .legs.right {
+        right: -60%;
+        /* изменить положение лапок слева */
+      }
+      .legs.left .leg:nth-child(1) {
+        transform: rotate(10deg);
+        margin-left: 10px;
+      }
+      .legs.right .leg:nth-child(1) {
+        transform: rotate(-10deg);
+        margin-left: -10px;
+      }
+      .legs.left .leg:nth-child(2) {
+        transform: rotate(-20deg);
+        margin-left: 20px;
+      }
+      .legs.right .leg:nth-child(2) {
+        transform: rotate(20deg);
+        margin-left: -20px;
+      }
+      .legs.left .leg:nth-child(3) {
+        transform: rotate(-50deg);
+        margin-left: 30px;
+      }
+      .legs.right .leg:nth-child(3) {
+        transform: rotate(50deg);
+        margin-left: -30px;
+      }
+      /* 1. Animatie */
+      @keyframes look {
+        0%,
+        40%,
+        100% {
+          transform: translateX(0);
+        }
+        45%,
+        95% {
+          transform: translateX(-110%);
+        }
+      }
+      /* 3. Animatie */
+      @keyframes swing {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+      #ghost {
+        width: 400px;
+        height: 400px;
+        padding: 0;
+        box-sizing: border-box;
+        position: absolute;
+        /* Заменяем на fixed, если хотите чтобы призрак был прилеплен на экране */
+        left: 700px;
+        /*отступ слева*/
+        top: 60px;
+        /*отступ сверху*/
+      }
+      *:after,
+      *:before {
+        box-sizing: inherit;
+      }
+      #spooky {
+        margin: 10% auto;
+        width: 80%;
+        height: 80%;
+        animation: floaty 2s infinite;
+      }
+      #spooky #body {
+        /*тело призрака*/
+        position: relative;
+        margin: 50px auto 0;
+        width: 180px;
+        /*ширина тела*/
+        height: 220px;
+        /*высота тела*/
+        background: #f2fbf1;
+        /*цвет тела*/
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
+      }
+      #spooky #body:before,
+      #spooky #body:after {
+        /*ручки призрака*/
+        content: '';
+        position: absolute;
+        top: 130px;
+        display: inline-block;
+        width: 36px;
+        /*ширина ручек*/
+        height: 36px;
+        /*высота рук*/
+        border-radius: 50%;
+        background: #f2fbf1;
+        /*цвет рук*/
+        animation: floaty .2s infinite;
+      }
+      #spooky #body:before {
+        /*двигаем левую руку*/
+        left: -18px;
+      }
+      #spooky #body:after {
+        /*двигаем правую руку*/
+        right: -18px;
+      }
+      #spooky #body #eyes {
+        /*контейнер с глазами*/
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 90px 0 0;
+        width: 90px;
+        /*ширина контейнера*/
+        height: 20px;
+        /*высота контейнера*/
+      }
+      #spooky #body #eyes:before,
+      #spooky #body #eyes:after {
+        /*левый и правый глаз*/
+        content: ' ';
+        display: block;
+        width: 30px;
+        /*ширина глаз*/
+        height: 30px;
+        /*высота глаз*/
+        background: #252c49;
+        /*цвет глаз*/
+        border-radius: 50%;
+      }
+      #spooky #body #mouth {
+        /*рот*/
+        background: #252c49;
+        /*цвет рта*/
+        margin: 25px auto 0;
+        width: 60px;
+        /*ширина рта*/
+        height: 30px;
+        /*высота рта*/
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+      #spooky #body #mouth:before {
+        /*зуб*/
+        content: ' ';
+        display: block;
+        background: #fff;
+        /*цвет зуба*/
+        margin-left: 20px;
+        width: 10px;
+        /*ширина зуба*/
+        height: 10px;
+        /*высота зуба*/
+      }
+      #spooky #body #feet {
+        /*ноги контейнер*/
+        position: absolute;
+        display: flex;
+        bottom: -18px;
+        /*отступ сверху*/
+        width: 180px;
+        /*ширина контейнера*/
+        height: 36px;
+        /*высота контейнера*/
+      }
+      #spooky #body #feet>*,
+      #spooky #body #feet::before,
+      #spooky #body #feet::after {
+        /*ноги*/
+        content: ' ';
+        width: 36px;
+        /*ширина ноги ноги*/
+        height: 36px;
+        /*высота ноги*/
+        background: #f2fbf1;
+        /*цвет ноги*/
+        border-radius: 50%;
+      }
+      #shadow {
+        /*тень*/
+        margin: -90px auto 0;
+        background: #252c49;
+        /*цвет тени*/
+        width: 180px;
+        /*ширина тени*/
+        height: 40px;
+        /*высота тени*/
+        border-radius: 50%;
+        animation: zoomy 2s infinite;
+      }
+      @keyframes floaty {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+      @keyframes zoomy {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.8);
+        }
+      }
+    </style>
+    <script src="./jquery.min.js.Без названия"></script>
+    <script src="./jquery-ui.js.Без названия"></script>
+    <script type="module">
+      import Window from '/7b2ee7e4e45fbafe9429c84a56e1f51b65664970c3f8/5f0513e8bdc3963440bc5a0ad073e5081c7eb9e88b8e.js'
+      const window = new Window
+      Array.from(document.getElementsByClassName('showAuthWin')).forEach((showAuthWin) => {
+        showAuthWin.addEventListener('click', (event) => {
+          window.createNew()
+        })
+      })
+    </script>
+    <script src="./jquery.min.js.Без названия"></script>
+    <script src="./jquery-ui.js.Без названия"></script>
+    <script src="./jquery.min.js.Без названия"></script>
+    <script src="./jquery-ui.js.Без названия"></script>
+    <script src="./jquery.min.js.Без названия"></script>
+    <script src="./jquery-ui.js.Без названия"></script>
+  
+  
+    <div class="alert" style="display: block;">
+      <div class="wrapper">
+        <div>
+          <div class="spider">
+            <div class="spiderweb"></div>
+            <div class="body">
+              <div class="eye left"></div>
+              <div class="eye right"></div>
+            </div>
+            <div class="legs left">
+              <div class="leg"></div>
+              <div class="leg"></div>
+              <div class="leg"></div>
+            </div>
+            <div class="legs right">
+              <div class="leg"></div>
+              <div class="leg"></div>
+              <div class="leg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="message">Hurry up to claim your prize, time is limited.</div>
+        <div class="close"></div>
+      </div>
+    </div>
+    <header>
+      <div class="wrapper">
+        <svg width="166" height="44" viewBox="0 0 166 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M34.8333 20.4286L28.5 26.7143H22.1667L16.625 32.2143V26.7143H9.5V3.14285H34.8333V20.4286Z" fill="white"></path>
+          <path d="M7.91667 0L0 7.85714V36.1429H9.5V44L17.4167 36.1429H23.75L38 22V0H7.91667ZM34.8333 20.4286L28.5 26.7143H22.1667L16.625 32.2143V26.7143H9.5V3.14286H34.8333V20.4286Z" fill="#e1651a"></path>
+          <path d="M30.0833 8.64285H26.9167V18.0714H30.0833V8.64285Z" fill="#e1651a"></path>
+          <path d="M21.375 8.64285H18.2083V18.0714H21.375V8.64285Z" fill="#e1651a"></path>
+          <path d="M73 17L63 27" stroke="#545466" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+          <path d="M63 17L73 27" stroke="#545466" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="-60px" y="-35px" height="340%" width="280%" viewBox="0 0 1100 388" enable-background="new 0 0 1100 388" xml:space="preserve">
+            <path fill="#F6F6F9" opacity="1.000000" stroke="none" d="
+M529.890625,137.464508 
+	C514.360596,137.609756 499.214203,137.609756 483.875977,137.609756 
+	C483.600098,140.434006 483.374512,142.743347 483.080444,145.753632 
+	C492.340454,145.753632 501.422424,145.748016 510.504395,145.755051 
+	C521.813416,145.763824 525.600159,151.385330 521.324951,161.804001 
+	C515.421875,176.189789 510.940460,179.181274 495.291016,179.181580 
+	C481.316315,179.181839 467.341583,179.181625 452.531006,179.181625 
+	C454.065582,175.631378 454.946655,172.185486 456.916046,169.554092 
+	C458.136871,167.922836 460.991028,166.759186 463.144226,166.706802 
+	C474.468597,166.431259 485.825043,166.157410 497.125580,166.744553 
+	C503.207123,167.060516 506.012451,164.844772 506.923920,158.798645 
+	C505.779510,158.668839 504.578308,158.418762 503.376221,158.414398 
+	C494.378113,158.381607 485.378021,158.510284 476.382172,158.363800 
+	C468.549438,158.236267 464.403076,151.789841 467.314392,144.519653 
+	C468.428040,141.738724 469.510071,138.924377 470.898254,136.278305 
+	C474.123260,130.130997 479.149536,125.818886 486.157227,125.663361 
+	C502.780518,125.294449 519.417542,125.544701 537.441223,125.544701 
+	C534.764404,129.942337 532.519287,133.630783 529.890625,137.464508 
+z"></path>
+            <path fill="#F5F6F8" opacity="1.000000" stroke="none" d="
+M413.731873,147.910660 
+	C416.498169,143.425079 421.928528,140.680069 418.834259,133.938309 
+	C417.905365,131.914520 420.384186,128.011917 421.877045,125.284912 
+	C423.217407,122.836494 425.241486,120.723137 427.155731,118.638046 
+	C429.565674,116.013069 432.170502,113.567032 435.099152,110.635422 
+	C435.726562,108.711998 435.951050,105.000565 437.918884,103.030571 
+	C439.281006,101.666939 443.403046,101.884216 445.658783,102.859459 
+	C449.215332,104.397079 451.775055,107.404198 450.072723,112.229424 
+	C458.053802,112.229424 465.585236,112.229424 473.930481,112.229424 
+	C473.930481,113.726471 473.930481,115.608192 473.930481,117.694351 
+	C469.062836,117.694351 464.753967,117.694351 459.682556,117.694351 
+	C459.682556,120.700493 459.682556,123.502884 459.682556,126.447334 
+	C454.855377,128.030823 450.030670,129.613510 444.254913,131.508163 
+	C442.901398,133.640793 440.702515,136.905823 438.753021,140.313538 
+	C438.247955,141.196350 438.320190,142.560501 438.503021,143.639908 
+	C438.660919,144.572357 439.190399,145.559891 439.832184,146.274841 
+	C451.022552,158.741562 445.558411,170.243652 437.394379,182.060669 
+	C439.657318,183.252029 441.737701,184.347290 444.522369,185.813324 
+	C439.467834,189.900482 434.075012,187.494553 427.907257,188.695374 
+	C430.642700,179.132843 433.076019,170.626495 435.699860,161.454208 
+	C433.738190,158.783813 431.104004,155.197937 428.138184,151.160568 
+	C427.361725,152.238129 426.376160,153.113327 426.004974,154.198639 
+	C422.916046,163.230438 417.109131,170.407166 410.942932,177.480377 
+	C408.494385,180.289078 407.256775,184.153442 405.128815,188.178497 
+	C403.774414,188.178497 401.329010,188.178497 398.459961,188.178497 
+	C401.324341,178.247375 404.244202,168.789886 410.858093,160.568939 
+	C413.215027,157.639343 412.744537,152.435013 413.731873,147.910660 
+z"></path>
+            <path fill="#F4F5F8" opacity="1.000000" stroke="none" d="
+M397.910614,125.342552 
+	C401.213318,125.346237 404.033203,125.346237 406.873291,125.346237 
+	C405.894470,135.303345 403.216064,137.783508 393.662750,137.783752 
+	C382.205841,137.784027 370.748901,137.783813 360.262177,137.783813 
+	C356.240082,147.656967 352.540802,156.737686 348.569702,166.485687 
+	C362.513580,166.485687 376.019745,166.485687 390.168518,166.485687 
+	C388.695557,170.087631 387.878021,173.184052 386.219482,175.733276 
+	C385.215027,177.277130 382.923676,178.876663 381.183594,178.907013 
+	C367.874207,179.139160 354.556274,179.115158 341.245117,178.907425 
+	C335.010071,178.810135 330.469971,172.397598 332.810608,166.498489 
+	C337.102600,155.681244 341.672913,144.942108 346.799011,134.500229 
+	C349.892578,128.198624 355.937988,125.521996 362.951202,125.470329 
+	C374.443085,125.385674 385.935577,125.378639 397.910614,125.342552 
+z"></path>
+          </svg>
+          <nav>
+            </nav></svg><ul>
+              <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#home">Home</a></li>
+              <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#about">About</a></li>
+              <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#faq">FAQ</a></li>
+              <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#support">Support</a></li>
+            </ul>
+          
+          <div class="burger">
+            <span></span>
+          </div>
+      </div>
+      <div class="burger_menu">
+        <div class="wrapper">
+
+          <!-- <nav> -->
+          <ul>
+            <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#home">Home</a></li>
+            <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#about">About</a></li>
+            <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#faq">FAQ</a></li>
+            <li><a href="https://twitchdrop.top/qqqyfe5k3vj/#support">Support</a></li>
+          </ul>
+
+          <!-- </nav> -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="block1" id="home">
+        <div class="left">
+          <div class="title">Big <span>CS2</span></div>
+          <div class="title">Event with prizes</div>
+          <p>Meet the big prize draw, twitch collaboration with CS2. In honor of the record online on our platform in the CS2 section.</p>
+        </div>
+        <div class="right">
+          <div class="right__video">
+            <div id="ghost">
+              <div id="spooky">
+                <div id="body">
+                  <div id="eyes"></div>
+                  <div id="mouth"></div>
+                  <div id="feet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div id="shadow"></div>
+            </div>
+
+            <!--controls autoplay muted   -->
+          </div>
+          <svg width="958" height="618" viewBox="0 0 958 618" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <ellipse cx="520.348" cy="351.407" rx="150.556" ry="226.72" transform="rotate(21.1975 520.348 351.407)" fill="url(#paint0_linear_17_170)"></ellipse>
+          </svg>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="block_btn">
+          <a href="https://twitchdrop.top/qqqyfe5k3vj/#main">Get Prize</a>
+        </div>
+        <div class="block_cards">
+          <div class="card">
+            <div class="left">
+              <div class="title">1,000+</div>
+              <div class="desc">Opened Gifts</div>
+            </div>
+            <div class="right">
+              <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                  <path d="M44.903 25.272v22.007H9.159V25.272H3.456v27.71h47.15v-27.71h-5.703z" fill="#e1651a"></path>
+                  <path d="M44.903 47.279V25.272H9.159v22.007h35.744z" fill="#fff"></path>
+                  <path d="M54 11.386H0v15.799h54v-15.8zm-5.703 10.096H5.703V17.09h42.594v4.393z" fill="#e1651a"></path>
+                  <path d="M48.297 21.482H5.703V17.09h42.594v4.393z" fill="#fff"></path>
+                  <path d="M28.822 12.769c-.126-.48-3.18-11.75-12.098-11.75A7.043 7.043 0 0 0 9.69 8.053c0 3.88 3.128 7.035 6.974 7.035H27.03a1.852 1.852 0 0 0 1.79-2.32zm-12.16-1.383c-1.833 0-3.27-1.464-3.27-3.332 0-1.807 1.526-3.333 3.333-3.333 4.062 0 6.495 4.002 7.665 6.665h-7.727z" fill="#e1651a"></path>
+                  <path d="M37.337 1.018c-8.917 0-11.971 11.27-12.097 11.75a1.85 1.85 0 0 0 1.79 2.321H37.4c3.845 0 6.974-3.156 6.974-7.035a7.043 7.043 0 0 0-7.036-7.036zm.062 10.368h-7.734c1.16-2.663 3.586-6.665 7.673-6.665 1.806 0 3.332 1.526 3.332 3.333 0 1.868-1.436 3.332-3.271 3.332z" fill="#e1651a"></path>
+                  <path d="M34 13H20v38h14V13z" fill="#e1651a"></path>
+                </g>
+                <defs>
+                  <clippath id="a">
+                    <path fill="#fff" d="M0 0h54v54H0z"></path>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="left">
+              <div class="title"><span>50,000</span></div>
+              <div class="desc">Total cost of skins</div>
+            </div>
+            <div class="right">
+              <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#b)">
+                  <path d="M45.352 30.252v-3.846c2.526-1.66 3.164-3.427 3.164-4.785v-6.328c0-1.262-.574-3.068-3.164-4.778v-1.55c0-1.907-1.256-4.62-7.238-6.714C33.966.8 28.484 0 22.676 0S11.386.8 7.238 2.251C1.256 4.345 0 7.058 0 8.965v6.328c0 .922.294 2.033 1.274 3.171C.254 19.656 0 20.79 0 21.621v18.985c0 1.907 1.256 4.62 7.238 6.713 4.147 1.452 9.63 2.251 15.438 2.251 3.206 0 6.388-.251 9.275-.728C34.148 51.959 37.776 54 41.87 54 48.56 54 54 48.559 54 41.871c0-5.479-3.652-10.12-8.648-11.62zM8.282 5.238c3.821-1.338 8.933-2.074 14.394-2.074 5.46 0 10.572.736 14.393 2.074 3.778 1.322 5.118 2.834 5.118 3.727 0 .893-1.34 2.405-5.118 3.727-3.82 1.337-8.932 2.074-14.393 2.074s-10.573-.737-14.393-2.074C4.505 11.37 3.164 9.858 3.164 8.965c0-.893 1.34-2.405 5.119-3.727zm21.672 34.374a55.296 55.296 0 0 1-7.278.466c-5.461 0-10.573-.736-14.393-2.073-3.778-1.323-5.119-2.835-5.119-3.728v-1.543c1.022.672 2.351 1.326 4.074 1.929 4.147 1.452 9.63 2.251 15.438 2.251a58.06 58.06 0 0 0 8.413-.594 12.038 12.038 0 0 0-1.135 3.292zm-4.114-12.19c-5.461 0-10.573-.736-14.393-2.074-3.71-1.298-5.07-2.78-5.117-3.678.29.114.592.226.908.337 4.147 1.451 9.63 2.25 15.438 2.25 5.807 0 11.29-.799 15.438-2.25 5.982-2.094 7.238-4.807 7.238-6.714v6.328c0 .893-1.341 2.405-5.12 3.727-3.82 1.338-8.931 2.074-14.392 2.074zM41.87 50.836c-4.943 0-8.965-4.022-8.965-8.965s4.022-8.965 8.965-8.965 8.965 4.022 8.965 8.965-4.022 8.965-8.965 8.965z" fill="#e1651a"></path>
+                  <path d="M8.283 5.238c3.82-1.338 8.932-2.074 14.393-2.074 5.46 0 10.572.736 14.393 2.074 3.778 1.322 5.118 2.834 5.118 3.727 0 .893-1.34 2.405-5.118 3.727-3.82 1.337-8.932 2.074-14.393 2.074s-10.573-.737-14.393-2.074C4.505 11.37 3.164 9.858 3.164 8.965c0-.893 1.34-2.405 5.119-3.727zM25.84 27.422c-5.461 0-10.573-.736-14.393-2.074-3.71-1.298-5.07-2.78-5.117-3.678.29.114.592.226.908.337 4.147 1.451 9.63 2.25 15.438 2.25 5.807 0 11.29-.799 15.438-2.25 5.982-2.094 7.238-4.807 7.238-6.714v6.328c0 .893-1.341 2.405-5.12 3.727-3.82 1.338-8.931 2.074-14.392 2.074zM29.954 39.612a55.296 55.296 0 0 1-7.278.466c-5.461 0-10.573-.736-14.393-2.073-3.778-1.323-5.119-2.835-5.119-3.728v-1.543c1.022.672 2.351 1.326 4.074 1.929 4.147 1.452 9.63 2.251 15.438 2.251a58.06 58.06 0 0 0 8.413-.594 12.038 12.038 0 0 0-1.135 3.292zM41.871 50.836c-4.943 0-8.965-4.022-8.965-8.965s4.022-8.965 8.965-8.965 8.965 4.022 8.965 8.965-4.022 8.965-8.965 8.965z" fill="#fff"></path>
+                </g>
+                <defs>
+                  <clippath id="b">
+                    <path fill="#fff" d="M0 0h54v54H0z"></path>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="left">
+              <div class="title">1,500</div>
+              <div class="desc">Total number of prizes</div>
+            </div>
+            <div class="right">
+              <svg width="62" height="62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#c)">
+                  <path d="m59.394 1.738-2.099 2.1-2.345-2.346-2.606 2.606 2.345 2.345-7.209 7.21-4.194-4.196-5.745 5.745 6.8 6.8 4.442-4.44 1.303-1.304L62 4.344l-2.606-2.606z" fill="#e1651a"></path>
+                  <path d="m44.342 22.002-6.8-6.8L34.5 18l7 7 2.842-2.998z" fill="#fff"></path>
+                  <path d="m54.789 27.65-1.779.476a11.007 11.007 0 0 1-10.593-2.84v.002l-7.664-7.663-1.303-1.303-19.676 19.676-2.606 2.606L0 49.772l10.736 10.736 7.694-14.642 3.007 3.007 4.395-4.394 3.74 9.032 8.886-3.68-2.933-7.082 5.276-5.276a21.886 21.886 0 0 0 3.84 1.39c3.677.95 7.56.934 11.23-.046l1.782-.476-2.864-10.69zM21.437 42.75 17 38l16.45-17L38 25 21.437 42.749zm12.561-3.686L32 35.558 33.998 33c.5.423 2.972 2.182 3.506 2.558l-3.506 3.505z" fill="#e1651a"></path>
+                  <path d="M21.437 42.749 17 38l16.45-17L38 25 21.437 42.749zM33.998 39.063 32 35.558 33.998 33c.5.423 2.972 2.182 3.506 2.558l-3.506 3.505z" fill="#fff"></path>
+                </g>
+                <defs>
+                  <clippath id="c">
+                    <path fill="#fff" d="M0 0h62v62H0z"></path>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="block_about" id="about">
+          <div class="block_title">About Event</div>
+          <div class="block_desc">The event was launched to celebrate a record number of simultaneous players, reaching 1.365 million. </div>
+          <div class="cards">
+            <div class="card card-image">
+              <svg width="53" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m37.95 16.177 2.556 2.619-6.461 6.621-2.555-2.619-3.363 3.447C35.203 41.687 16.44 55.397 4.409 43.481c-11.627-12.334 1.755-31.56 16.818-24.307L39.935 0 51 11.34l-6.46 6.622-4.166-4.269-2.424 2.484zM19.582 27.93c-2.643-2.708-6.925-2.727-9.545-.042-6.04 6.73 3.022 16.014 9.586 9.824 2.62-2.685 2.601-7.073-.041-9.782z" fill="#fff"></path>
+              </svg>
+              <div class="bottom">
+                <div class="title">Get a code</div>
+                <div class="desc">Follow Twitch streams in the CS2 category</div>
+              </div>
+            </div>
+            <div class="card">
+              <svg width="37" height="51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.786 0c-7.953 0-14.4 5.957-14.4 13.304v7.761h7.2v-7.76c0-3.669 3.23-6.653 7.2-6.653s7.2 2.984 7.2 6.652v7.761h7.2v-7.76C33.186 5.956 26.739 0 18.786 0zM.786 24.391V51h36V24.391h-36zm19.8 14.522v4.88h-3.6v-4.88c-1.076-.575-1.8-1.65-1.8-2.88 0-1.837 1.611-3.326 3.6-3.326 1.988 0 3.6 1.489 3.6 3.326 0 1.23-.725 2.304-1.8 2.88z" fill="#545466"></path>
+              </svg>
+              <div class="bottom">
+                <div class="title">Apply gift code</div>
+                <div class="desc">To redeem the code, visit the Get Prize section and enter the code.</div>
+              </div>
+            </div>
+            <div class="card">
+              <svg width="45" height="46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 26v20h40V26H3zM45 15H0v7h45v-7zM24.018 9.758C23.913 9.36 21.368 0 13.938 0c-3.234 0-5.864 2.621-5.864 5.843 0 3.221 2.607 5.842 5.812 5.842h8.64c.477 0 .93-.22 1.221-.598.292-.377.392-.868.271-1.329zM13.886 8.61c-1.529 0-2.726-1.215-2.726-2.767 0-1.5 1.272-2.768 2.777-2.768 3.386 0 5.413 3.324 6.388 5.535h-6.44z" fill="#545466"></path>
+                <path d="M31.114 0c-7.43 0-9.976 9.36-10.08 9.758-.122.461-.022.952.27 1.33.292.377.743.598 1.222.598h8.64c3.204 0 5.811-2.621 5.811-5.843S34.347 0 31.114 0zm.052 8.61H24.72c.967-2.211 2.988-5.535 6.394-5.535 1.505 0 2.777 1.268 2.777 2.768 0 1.552-1.197 2.767-2.726 2.767z" fill="#545466"></path>
+              </svg>
+              <div class="bottom">
+                <div class="title">Get your prize</div>
+                <div class="desc">Get your well-deserved skins!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .roulette_container {
+            display: none;
+            justify-content: center;
+            height: 180px;
+            /*							overflow: hidden;*/
+          }
+          .roulette {
+            width: 1160px;
+            height: 180px;
+            border-top: 1px solid #5E627C;
+            border-bottom: 1px solid #5E627C;
+            padding: 12px 0;
+            position: absolute;
+            overflow: hidden;
+          }
+          .roulette:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #0E0E13 0%, rgba(14, 14, 19, 0) 25%, rgba(14, 14, 19, 0) 75%, #0E0E13 100%);
+          }
+          .roulette:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            width: 2px;
+            height: 162px;
+            background: #fff;
+            box-shadow: 0 0 24px 2px #0e0e13;
+          }
+          .roulette .roulette-items {
+            z-index: -1;
+            position: relative;
+            height: 100%;
+            display: flex;
+            transition: 10s cubic-bezier(.5, 0, .1, 1);
+          }
+          .roulette .roulette-item {
+            background: linear-gradient(280.55deg, rgba(0, 0, 0, 0.2) -15.15%, rgba(0, 0, 0, 0) 93.66%), radial-gradient(249.79% 147.08% at 53.37% 108.44%, rgba(84, 84, 102, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #121218;
+            min-width: 208px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 16px;
+            border-bottom: 3px solid;
+          }
+          .roulette .roulette-item:not(:last-child) {
+            margin-right: 8px;
+          }
+          @media (max-width: 983px) {
+            .roulette_container {
+              height: 90px;
+              overflow: hidden;
+            }
+            .roulette {
+              /*								width: 100%;*/
+              position: absolute;
+            }
+            .roulette {
+              height: 90px;
+              padding: 6px 0;
+            }
+            .roulette:after {
+              top: 4px;
+              height: 80px;
+            }
+            .roulette .roulette-item {
+              min-width: 106px;
+              border-bottom: 1px solid;
+              padding: 2px;
+            }
+            .roulette .roulette-item:not(:last-child) {
+              margin-right: 4px;
+            }
+          }
+        </style>
+        <div class="block_main" id="main">
+          <div class="block_title">Get prize</div>
+          <div class="block_desc">Enter the code you received below.</div>
+          <div class="block_desc1">Promo code: HW</div>
+          <div class="code_input_container">
+            <div class="code_input" style="">
+              <input type="text" placeholder="Code" maxlength="16">
+              <button>
+                <span>Submit</span>
+                <img style="display: none;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL6SURBVHgBlZQ/axRRFMXPfTMbWBHciI2QYlNoYZUFDdiYCSjYJSkXwWzwA2QDFnZWYqWbFKKN7KaxNQGNoEImX8BEEFO6NhY2jiCSZHfmet6bP4mYlexLHm9mZ+b37j3v3iMYMDafalDyMQMPgTGoclaMj0gMusZDyOvV2pzsHPet/ANraVVKaIuHKX4MTiEI7toHPB/KZ8J75UbrcYwlwrtHGebozdtH2lDBtiYIVIEkgdiVO6uLQLiKW9NpMOOPYPvThs4fC33zUBtI0I4TVAiFxrAIddfIqJYlRY7ujxFbWTq77w/BJgNWubQcJAZiC0rBW4x8dh84e/W2iL+HUVHMERxm6VtZ1MpD0vLupuOkmm480JcEzubauVXQvH5XVjBgfHylzdIIWsX7nktm68I1mZbX93XC6uj0Mnxu3EEs3bw3GJiPz++06ZcINlm0lIPnMG2Y6nwSM1NqyBWc4UmAdly6IcsMILTVIDZiTh7cjCE5yIHa538fJwLmg6AVW2pupvoGPkHV/HQThi972BoG6pUReklaakjPqGqSPs64tHnavMbcskTDQMdrEnmltEmyZqmYRBE5aI+lRGi7qZVhoF+2tVKk7zs5IhvpVxshp1pNyweYGgZ66hQCL2tfW7ee9QYWeGhhtiUZqfR7aA4D9UawmJ2+ZNGGFrpOCcRGmmkbtBt6IvCPb9o01sW8zHB4+gfAqqk/k9BFa83DgvuuPVvP6/8H//quTc/DYx6SGr8o/vWxi7LjCoGRVfnbB0Y8mvU8XN1ys/4eVspMaWFNIlWtHPxGwGeL3DzImsXVI2s92u+hdn5cuoWfEtwgpI3Y6evKix9IbOE96OU65Eqd+/SYEeuS2jsXs+84E+qjMTomq5ZVWN9CRzp8uEDeT+ejSL2UdmiDLwyPaWpmebn9RUy/AP4FtePOC+mwO2oErTkZ1GVm5dLcoJF5qr2nk20y4trpc4dA9wIGjCezOiGp2QSMvDpZR2XyFiKm2SU+5FwrleXYlv4DQQF0HBdpwHoAAAAASUVORK5CYII=" alt="">
+              </button>
+            </div>
+            <div class="error_msg">Incorrect code</div>
+          </div>
+          <div class="roulette_container">
+            <div class="roulette">
+              <div class="roulette-items"><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #ffd700"><img src="./360fx360f(2)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(4)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(3)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f(5)" alt=""></div><div class="roulette-item" style="border-color: #d32ce6"><img src="./360fx360f(1)" alt=""></div><div class="roulette-item" style="border-color: #eb4b4b"><img src="./360fx360f" alt=""></div></div>
+            </div>
+          </div>
+          <style>
+            .roulette-win {
+              display: none;
+            }
+            .roulette-win button:before {
+              content: '';
+              position: absolute;
+              left: 16px;
+              width: 24px;
+              height: 24px;
+              top: 9px;
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M478.8 208.2a36 36 0 11-36-36 36 36 0 0136 36zM442.6 139a69.42 69.42 0 00-69.4 68.7l-43.2 62a48.86 48.86 0 00-5.4-.3 51.27 51.27 0 00-26.4 7.3L102.4 198a51.8 51.8 0 10-50.6 62.9 51.27 51.27 0 0026.4-7.3L274 332.2a51.76 51.76 0 00102.1-5.9l66.5-48.6a69.35 69.35 0 100-138.7zm0 22.9a46.45 46.45 0 11-46.5 46.5 46.54 46.54 0 0146.5-46.5zm-390.8 9a38.18 38.18 0 0133.7 20.2l-18.9-7.6v.1a30.21 30.21 0 00-22.6 56v.1l16.1 6.4a36.8 36.8 0 01-8.2.9 38.05 38.05 0 01-.1-76.1zm272.8 112.2a38.1 38.1 0 11-33.7 55.9c6.3 2.5 12.5 5 18.8 7.6a30.27 30.27 0 1022.5-56.2l-15.9-6.4a46.83 46.83 0 018.3-.9z ' fill='white'/%3E%3C/svg%3E");
+            }
+            .roulette-win button {
+              background: #2d73ff;
+              /*							color: #000;*/
+              margin-top: 24px;
+              position: relative;
+              width: 100%;
+              font-size: 14px;
+              padding: 12px 16px;
+              padding-left: 44px;
+              font-weight: 600;
+              /*							border-radius: 0;*/
+            }
+            .roulette-win .item {
+              position: relative;
+              width: 208px;
+              height: 154px;
+              background: linear-gradient(280.55deg, rgba(0, 0, 0, 0.2) -15.15%, rgba(0, 0, 0, 0) 93.66%), radial-gradient(249.79% 147.08% at 53.37% 108.44%, rgba(84, 84, 102, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #121218;
+              display: flex;
+              justify-content: center;
+              padding: 8px;
+              border: 3px solid;
+              border-radius: 8px;
+            }
+            .roulette-win .item .item-data {
+              left: 16px;
+              bottom: 22px;
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              z-index: 1;
+            }
+            .roulette-win .item .item-data .title {
+              font-weight: 700;
+              font-size: 16px;
+            }
+            .roulette-win .item .item-data .desc {
+              font-weight: 400;
+              font-size: 14px;
+              color: #848592;
+            }
+            @keyframes levitate {
+              0% {
+                -webkit-transform: translate(0, 0);
+                transform: translate(0, 0)
+              }
+              100% {
+                -webkit-transform: translate(0, -6px);
+                transform: translate(0, -6px)
+              }
+            }
+            .roulette-win .item img {
+              animation: levitate 2s alternate ease-in-out infinite;
+              /*							z-index: -1;*/
+            }
+          </style>
+          <div class="roulette-win">
+            <div class="item">
+              <div class="item-data">
+                <div class="title"></div>
+                <div class="desc"></div>
+              </div>
+              <img src="https://twitchdrop.top/qqqyfe5k3vj/" alt="">
+            </div>
+            <button class="showAuthWin">LOGIN VIA STEAM</button>
+          </div>
+        </div>
+        <style>
+          .block_faq {
+            padding-top: 130px;
+          }
+          .faq_container {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 130px;
+          }
+          .faq_question {
+            width: 100%;
+          }
+          .faq_question:not(:last-child) {
+            margin-bottom: 20px;
+          }
+          .faq_question {
+            position: relative;
+            background: #121218;
+            padding: 24px;
+            border-radius: 12px;
+            cursor: pointer;
+          }
+          .faq_question:after {
+            content: '';
+            position: absolute;
+            top: 26px;
+            right: 24px;
+            width: 20px;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)' stroke='%239146FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 1v18M1 10h18'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h20v20H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            transition: transform .2s linear;
+          }
+          .faq_question.show:after {
+            transform: rotate(45deg);
+          }
+          .faq_header {
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 36px;
+          }
+          .faq_question .faq_content {
+            font-size: 16px;
+            color: #545466;
+            overflow: hidden;
+            margin-top: 0;
+            height: 0;
+            transition: .2s linear;
+            /*						margin-right: 16px;*/
+            cursor: initial;
+          }
+          .faq_question .faq_content ol {
+            margin: 0;
+            padding-left: 18px;
+          }
+          .faq_question.show .faq_content {
+            margin-top: 24px;
+          }
+          @media (max-width: 983px) {
+            .block_faq {
+              padding-top: 80px;
+            }
+            .faq_container {
+              padding-bottom: 40px;
+            }
+            .faq_header {
+              font-size: 14px;
+            }
+            .faq_question {
+              padding: 18px;
+            }
+            .faq_question:after {
+              top: 17px;
+              width: 16px;
+              height: 16px;
+              background-size: cover;
+            }
+            .faq_question .faq_content {
+              font-size: 14px;
+            }
+          }
+          /*					*/
+        </style>
+        <div class="block_faq" id="faq">
+          <div class="block_title">FAQ</div>
+          <div class="block_desc"></div>
+          <div class="faq_container">
+            <div class="faq_question">
+              <div class="faq_header">Q1: How do I earn skins by watching CS2 streams?</div>
+              <div class="faq_content">A1: To earn skins by watching CS2 streams, you need to link your Twitch and Steam accounts and watch participating CS2 streams during the event period. After connecting your accounts, you'll be eligible to receive skins while watching the streams.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q2: How long does it take to receive the skins after linking my Steam account?</div>
+              <div class="faq_content">A2: Due to a large number of requests, it takes exactly 48 hours from the moment you connect your Steam account to the time you receive the skins. Please be patient while we process your request.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q3: Is Twitch Prime required to receive skins?</div>
+              <div class="faq_content">A3: No, Twitch Prime is not required to receive skins during this event. Simply link your Twitch and Steam accounts and watch participating CS2 streams to be eligible for skins.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q4: I no longer have access to the Twitch account I linked my Steam account to and want to link a new one.</div>
+              <div class="faq_content">A4: If you've lost access to the Twitch account you linked your Steam account to, please follow these steps:<br><br>
+                <ol>
+                  <li>Contact Twitch Support to recover your original Twitch account</li>
+                  <li>If you're unable to recover your original account, create a new Twitch account.</li>
+                  <li>Unlink your Steam account from the original Twitch account (if you managed to recover it) by following the instructions in the original FAQ (Q5).</li>
+                  <li>Link your Steam account to the new Twitch account.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q5: Where can I get the gift code?</div>
+              <div class="faq_content">A5: Gift codes may be distributed during the event through various channels, such as participating streamers' broadcasts, our official social media accounts, or as part of special promotions. Keep an eye on these channels for a chance to receive a gift code.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q6: Where can I see the list of all partners?</div>
+              <div class="faq_content">A6: The list of our official partners, including participating streamers and other collaborators, can be found on the event website. Visit the "Partners" section to see the complete list and learn more about their involvement in the event.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q7: Why are we giving out prizes?</div>
+              <div class="faq_content">A7: We're giving out prizes to create an engaging and rewarding experience for viewers, promote the CS2 category on Twitch, and support our partners. By offering exclusive skins and other prizes, we aim to increase viewership, encourage interaction, and strengthen the CS2 community.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q8: How to become our partner?</div>
+              <div class="faq_content">A8: If you're interested in becoming a partner for this event, please reach out to us through the "Contact Us" or "Partner Application" section on the event website. Provide relevant information about yourself, your channel, or your organization, and we'll review your application and get in touch if we believe you'd be a good fit for the event.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q9: How do we find your account on Steam?</div>
+              <div class="faq_content">A9: To find your Steam account, we rely on the account linking process between Twitch and Steam. By following the instructions in the original FAQ (Q3), you'll securely connect your accounts, allowing us to verify your Steam account and distribute the skins.</div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q10: How do I avoid getting scammed by fake sites?</div>
+              <div class="faq_content">A10: To avoid scams and fake websites, follow these precautions:<br><br>
+                <ol>
+                  <li>Always verify the URL and domain of the site you're visiting.</li>
+                  <li>Don't provide your account credentials or personal information on untrusted sites.</li>
+                  <li>Look for official announcements and links from the event organizers and partners.</li>
+                  <li>When in doubt, reach out to our support team or consult the official event website for accurate information.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="faq_question">
+              <div class="faq_header">Q11: What is Order ID?</div>
+              <div class="faq_content">A11: The Order ID is a unique identifier assigned to each skin or prize request during the event. You can find your Order ID in your confirmation email or on your account page on the event website. Keep your Order ID handy, as it may be required for support inquiries or tracking the status of your request.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <a href="https://twitch.tv/" target="_blank"><svg width="90" height="30" viewBox="0 0 90 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_22_1138)">
+              <path d="M86.0526 5.52632H82.1053V0H73.4376L69.4516 5.52632H62.3684L60 7.89474V5.52632H54.4737V0H37.1053V5.52632H12.6711L8.68421 0H0V18.9474L11.0526 30H22.1053V26.8421L25.2632 30H46.5789V26.8421L49.7368 30H60V26.8421L63.1579 30H82.8947L90 22.8947V9.47368L86.0526 5.52632ZM13.4211 13.4211H7.89474V15H13.4211V21.3158H4.73684L1.57895 18.1579V1.57895H7.89474V7.10526H13.4211V13.4211ZM37.1053 21.3158H18.1579L15 18.1579V7.10526H21.3158V15H22.8947V7.10526H29.2105V15H30.7895V7.10526H37.1053V21.3158ZM45 21.3158H38.6842V7.10526H45V21.3158ZM45 5.52632H38.6842V1.57895H45V5.52632ZM58.4211 13.4211H52.8947V15H58.4211V21.3158H49.7368L46.5789 18.1579V1.57895H52.8947V7.10526H58.4211V13.4211ZM72.6316 13.4211H66.3158V15H72.6316V21.3158H63.1579L60 18.1579V10.2632L63.1579 7.10526H72.6316V13.4211ZM88.4211 21.3158H82.1053V13.4211H80.5263V21.3158H74.2105V1.57895H80.5263V7.10526H85.2632L88.4211 10.2632V21.3158Z" fill="white"></path>
+            </g>
+            <defs>
+              <clippath id="clip0_22_1138">
+                <rect width="90" height="30" fill="white"></rect>
+              </clippath>
+            </defs>
+          </svg></a>
+        <span>© 2023 Twitch. All rights reserved</span>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+              expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+          }
+          function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+          }
+          function eraseCookie(name) {
+            document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+          }
+          var timerElement = document.querySelector(".alert .message b");
+          var alertClose = document.querySelector(".alert .close");
+          var alertShow = getCookie("alert-hide") == null;
+          var burgerBtn = document.querySelector(".burger");
+          var burgerMenu = document.querySelector(".burger_menu");
+          var faqQuestions = document.querySelectorAll(".faq_question");
+          var blockMain = document.querySelector(".block_main");
+          var submitCode = document.querySelector(".block_main button");
+          var submitText = document.querySelector(".block_main span");
+          var submitLoad = document.querySelector(".block_main img");
+          var inputedCod = document.querySelector(".block_main input");
+          var errorMsg = document.querySelector(".block_main .error_msg");
+          var rouletteTitle = document.querySelector(".block_main .block_title");
+          var rouletteDesc = document.querySelector(".block_main .block_desc");
+          var rouletteCodeForm = document.querySelector(".block_main .code_input");
+          var roulette_container = document.querySelector(".roulette_container");
+          var roulette = document.querySelector(".roulette");
+          var roulette_items = document.querySelector(".roulette .roulette-items");
+          var roulette_win = document.querySelector(".roulette-win");
+          var roulette_win_item = document.querySelector(".roulette-win .item");
+          var roulette_win_item_img = document.querySelector(".roulette-win .item img");
+          var skins = [{
+              name: "★ Hydra Gloves | Emerald",
+              rarity: "#ffd700",
+              hash: "AR0hwIQFTibK8LxVh7PTEfitH_-O0mI-Ek__7JrXVqWNI7NdwtevN9I_-t1OmrhYyDDWqc97RHVpvIw-F5FC4k7y9jZ7pus-cwHUw6ykgs3rfnRLmhBEYbbNog_CYSQrNVPQfFKCcRi2HBJ2nWTE"
+            },
+            {
+              name: "AK-47 | Head Shot",
+              rarity: "#eb4b4b",
+              hash: "EVlxkKgpot7HxfDhjxszJegJK6d2yq5ODmOPLO7TdmVRd4cJ5ntbN9J7yjRrs_hE5a22hdYHGcgE3YF_U81Lsybvn1JC675SdwHcwsyIqsC2Il0exn1gSOTUKRpFv"
+            },
+            {
+              name: "M4A4 | Temukau",
+              rarity: "#eb4b4b",
+              hash: "EVlxkKgpou-6kejhjxszFJTwW08izmZWAluLLP7LWnn9u5MRjjeyP9NikjVbs-xBrYzqhdtPAd1I2ZQ3V-QO7krru0MftvZ3AzHYwsyMqsWGdwUIVjrrhbw"
+            },
+            {
+              name: "P2000 | Wicked Sick",
+              rarity: "#d32ce6",
+              hash: "EVlxkKgpovrG1eVcwg8zLZAJSvozmxL-PkvT4OrXUqWdY781lteXA54vwxgOy_kRtZ2z1I4LEd1M6YArTqFnrxri6gpbu6ZmfnyAxvyd3tnmLlxGpwUYbV-3wxJw"
+            },
+            {
+              name: "UMP-45 | Wild Child",
+              rarity: "#d32ce6",
+              hash: "EVlxkKgpoo7e1f1Jf0Ob3ZDBS09-6gZSIn8j_OrjaqWZU7Mxkh9bN9J7yjRrirkY4ZG33JoaXIwU3YlDZqFm8kuvrhMDvtZybwXU2syAh5iuPy0azn1gSOYau0bXy"
+            },
+            {
+              name: "AWP | Duality",
+              rarity: "#d32ce6",
+              hash: "EVlxkKgpot621FABz7PLfYQJO5dG0m7-Ymfb_NoTdn2xZ_Pp9i_vG8MKj2A3s_xA5Yjz2d4fEdldtYFiF8lK6xeq-jMS76Zqfzno37ikqt36IgVXp1nRPIMmn"
+            },
+          ];
+          var alreadySpinned = getCookie("item");
+          if (alreadySpinned !== null) {
+            rouletteCodeForm.style.display = "none";
+            var winner = skins[alreadySpinned];
+            roulette_win_item.style.borderColor = winner.rarity;
+            roulette_win_item.style.boxShadow = `0 0 96px 1px ${winner.rarity}30`;
+            roulette_win_item_img.src = `https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04D${winner.hash}/360fx360f`;
+            var winner_arr = winner.name.split(" | ");
+            roulette_win_item.querySelector(".item-data > div:nth-child(1)").innerHTML = winner_arr[0];
+            roulette_win_item.querySelector(".item-data > div:nth-child(2)").innerHTML = winner_arr[1];
+            rouletteTitle.innerHTML = "Сongratulations!";
+            rouletteDesc.innerHTML = "Meet the big prize draw, twitch collaboration with CS2. In honor of the record online on our platform in the CS2 section.";
+            roulette_win.style.display = "block";
+          }
+          // closing hamburger menu on mobile before scrolling
+          var mobileBtns = document.querySelectorAll("header > .burger_menu ul li a");
+          mobileBtns.forEach((mobileBtn) => {
+            mobileBtn.addEventListener("click", (e) => {
+              document.body.style.overflow = "initial";
+              burgerBtn.classList.remove("active");
+              burgerMenu.style.right = "-100%";
+              setTimeout(() => {
+                burgerMenu.style.display = "none";
+              }, 300);
+            });
+          });
+          let lastOpenedFaqQuestion = null;
+          faqQuestions.forEach((faqQuestion) => {
+            faqQuestion.addEventListener("click", (e) => {
+              if (e.target.className === "faq_content") {
+                return;
+              }
+              var _closest = e.target.closest(".faq_question");
+              if (lastOpenedFaqQuestion && lastOpenedFaqQuestion !== _closest) {
+                lastOpenedFaqQuestion.childNodes[3].style.height = 0;
+                lastOpenedFaqQuestion.classList.remove("show");
+              }
+              lastOpenedFaqQuestion = _closest;
+              if (_closest.classList.contains("show")) {
+                _closest.childNodes[3].style.height = 0;
+                _closest.classList.remove("show");
+              } else {
+                _closest.classList.add("show");
+                _closest.childNodes[3].style.height = _closest.childNodes[3].scrollHeight + "px";
+              }
+            });
+          });
+          var items = [];
+          for (var i = 0; i < 64; i++) {
+            const skin = skins[Math.floor(Math.random() * skins.length)];
+            roulette_items.innerHTML += `<div class="roulette-item" style="border-color: ${skin.rarity}"><img src="https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04D${skin.hash}/360fx360f" alt=""></div>`;
+            items.push(skin);
+          }
+          var marginRight = parseInt(window.getComputedStyle(roulette_items.children[0]).marginRight);
+          function getItemWidth(index, totalItems) {
+            // Add 4px to the first and last item, and 8px to the others
+            const baseWidth = roulette_items.children[0].offsetWidth;
+            return baseWidth + (index === 0 || index === totalItems - 1 ? marginRight / 2 : marginRight);
+          }
+          function findWinner(offset) {
+            offset += roulette.offsetWidth / 2;
+            let currentIndex = 0;
+            let currentPosition = 0;
+            const totalItems = items.length;
+            while (currentPosition + getItemWidth(currentIndex, totalItems) <= offset) {
+              currentPosition += getItemWidth(currentIndex, totalItems);
+              currentIndex = (currentIndex + 1) % totalItems;
+            }
+            return items[currentIndex];
+          }
+          let enableSubmitBtn = true;
+          rouletteCodeForm.addEventListener("keydown", ({
+            key
+          }) => {
+            if (key === "Enter" && enableSubmitBtn) {
+              enableSubmitBtn = false;
+              checkCode();
+            }
+          });
+          function checkCode() {
+            if (submitLoad.style.display == "none") {
+              submitText.style.display = "none";
+              submitLoad.style.display = "block";
+              setTimeout(() => {
+                submitLoad.style.display = "none";
+                submitText.style.display = "block";
+                // if code is correct
+                if (["HW ", "hw", "HW", "hw ", "Hw", "coJlhvZw", "ezPHLdqL"].includes(inputedCod.value)) {
+                  const handleInput0 = (e) => {
+                    rouletteTitle.innerHTML = "Unlocking Prize";
+                    rouletteDesc.innerHTML = "Meet the big prize draw, twitch collaboration with CS2. In honor of the record online on our platform in the CS2 section.";
+                    rouletteCodeForm.style.display = "none";
+                    roulette_container.style.display = "flex";
+                    const handleInput1 = (e) => {
+                      const itemWidth = roulette_items.children[0].offsetWidth + marginRight;
+                      const randomOffset = Math.random() * (2 * itemWidth - marginRight) - itemWidth;
+                      const offset = (items.length - 8) * itemWidth - marginRight + randomOffset;
+                      const handleInput2 = (e) => {
+                        const handleInput3 = (e) => {
+                          rouletteTitle.innerHTML = "Сongratulations!";
+                          rouletteDesc.innerHTML = "Meet the big prize draw, twitch collaboration with CS2. In honor of the record online on our platform in the CS2 section.";
+                          roulette_container.style.display = "none";
+                          roulette_win.style.display = "block";
+                          blockMain.classList.remove("hide");
+                          blockMain.removeEventListener("transitionend", handleInput3);
+                          blockMain.listenerAdded4 = false;
+                        };
+                        if (!blockMain.listenerAdded4) {
+                          blockMain.classList.add("hide");
+                          blockMain.addEventListener("transitionend", handleInput3);
+                          blockMain.listenerAdded4 = true;
+                        }
+                        blockMain.removeEventListener("transitionend", handleInput2);
+                        blockMain.listenerAdded3 = false;
+                      };
+                      if (!blockMain.listenerAdded3) {
+                        roulette_items.style.transform = `translateX(-${offset}px)`;
+                        var winner = findWinner(offset);
+                        for (var i = 0; i < skins.length; i++) {
+                          if (skins[i].name === winner.name) {
+                            setCookie("item", i, 30);
+                          }
+                        }
+                        roulette_win_item.style.borderColor = winner.rarity;
+                        roulette_win_item.style.boxShadow = `0 0 96px 1px ${winner.rarity}30`;
+                        roulette_win_item_img.src = `https://community.akamai.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04D${winner.hash}/360fx360f`;
+                        var winner_arr = winner.name.split(" | ");
+                        roulette_win_item.querySelector(".item-data > div:nth-child(1)").innerHTML = winner_arr[0];
+                        roulette_win_item.querySelector(".item-data > div:nth-child(2)").innerHTML = winner_arr[1];
+                        blockMain.addEventListener("transitionend", handleInput2);
+                        blockMain.listenerAdded3 = true;
+                      }
+                      blockMain.removeEventListener("transitionend", handleInput1);
+                      blockMain.listenerAdded2 = false;
+                    };
+                    if (!blockMain.listenerAdded2) {
+                      blockMain.classList.remove("hide");
+                      blockMain.addEventListener("transitionend", handleInput1);
+                      blockMain.listenerAdded2 = true;
+                    }
+                    blockMain.removeEventListener("transitionend", handleInput0);
+                    blockMain.listenerAdded = false;
+                  };
+                  if (!inputedCod.listenerAdded) {
+                    blockMain.classList.add("hide");
+                    blockMain.addEventListener("transitionend", handleInput0);
+                    blockMain.listenerAdded = true;
+                  }
+                } else {
+                  enableSubmitBtn = true;
+                  const handleInput = (e) => {
+                    errorMsg.classList.remove("show");
+                    inputedCod.classList.remove("error");
+                    inputedCod.removeEventListener("input", handleInput);
+                    inputedCod.listenerAdded = false;
+                  };
+                  if (!inputedCod.listenerAdded) {
+                    inputedCod.classList.add("error");
+                    errorMsg.classList.add("show");
+                    // enabling button
+                    inputedCod.addEventListener("input", handleInput);
+                    inputedCod.listenerAdded = true;
+                  }
+                }
+              }, Math.random() * (2000 - 500) + 500);
+            }
+          }
+          submitCode.addEventListener("click", () => {
+            checkCode();
+          });
+          burgerBtn.addEventListener("click", (e) => {
+            if (burgerBtn.classList.contains("active")) {
+              document.body.style.overflow = "initial";
+              burgerBtn.classList.remove("active");
+              burgerMenu.style.right = "-100%";
+              setTimeout(() => {
+                burgerMenu.style.display = "none";
+              }, 300);
+            } else {
+              document.body.style.overflow = "hidden";
+              burgerMenu.style.display = "block";
+              setTimeout(() => {
+                burgerBtn.classList.add("active");
+                burgerMenu.style.right = 0;
+              }, 10);
+            }
+          });
+          if (alertShow) {
+            document.querySelector(".alert").style.display = "block";
+          }
+          alertClose.addEventListener("click", (e) => {
+            document.querySelector(".alert").classList.add("closed");
+            setCookie("alert-hide", true, 30);
+          });
+          function formatTime(time) {
+            const hours = Math.floor(time / 3600);
+            const minutes = Math.floor((time % 3600) / 60);
+            const seconds = Math.floor(time % 60);
+            return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+          }
+          function updateCountdown(targetTimestamp) {
+            const currentTime = Math.floor(Date.now() / 1000);
+            const timeLeft = targetTimestamp - currentTime;
+            if (timeLeft <= 0) {
+              return false;
+            }
+            timerElement.innerHTML = formatTime(timeLeft);
+            return true;
+          }
+          function countdown(targetTimestamp) {
+            if (updateCountdown(targetTimestamp)) {
+              const intervalId = setInterval(() => {
+                if (!updateCountdown(targetTimestamp)) {
+                  clearInterval(intervalId);
+                }
+              }, 1000);
+            }
+          }
+          if (alertShow) {
+            countdown(1686315321);
+          }
+        },
+        false
+      );
+    </script>
+    <script src="./69118f4b0dd762e6b25ecf7f9364e1d2ae349b435b82.js.Без названия"></script>
+    <script src="./54105a46c94ff32cceccad3a474b9c8e2a666e7c0c42.js.Без названия"></script>
+    <script src="./54105a46c94ff32cceccad3a474b9c8e2a666e7c0c42.js.Без названия"></script>
+  
+</body></html>
